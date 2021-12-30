@@ -1,0 +1,197 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	text-decoration: none;
+	list-style-type: none;
+}
+.fs-12{
+	font-size: 1.2em;
+}
+body{
+	background-color: #fafafa;
+	font-size: 1.5em;
+}
+.brnone{
+	border: none;
+	background: none;
+}
+.pd-10{
+	padding: 10px;
+}
+
+.pd-5{
+	padding: 5px;
+}
+
+.wd{
+	width: 91%;
+}
+.black{
+	color:hsl(204, 86%, 53%)
+}
+.white{
+	background-color: white;
+}
+.pd-top{
+	padding: 10px 0 0 0;
+}
+.wd-100{
+width: 100%;
+}
+
+.d-flex{
+	display: flex;
+
+}
+.container{
+	max-width: 550px;
+	margin: 0 auto;
+
+}
+
+.jusc{
+	justify-content: space-between;
+}
+nav{
+	display: block;
+	position: relative;
+}
+.psstick{
+	position: fixed;
+	bottom: 0;
+}
+.list{
+	font-size: 1.3em;
+	padding: 0 10px;
+}
+.list li{
+	padding: 0 10px 0 0;
+}
+.logo{
+	text-align: center;
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.both_jusc{
+	justify-content: space-between;
+}
+.point{
+	padding: 0 15px 5px 15px;
+}
+
+.mrgn{
+	margin: 20px 0;
+}
+
+.sct{
+	background: white;
+	border-bottom: 1px solid rgb(198, 198, 198);
+	border-top: 1px solid rgb(198, 198, 198);
+}
+.fs-19{
+	font-size: 1.9em;
+}
+.user{
+	padding: 5px 15px;
+}
+.userimg{
+	width: 2.5em;
+}
+
+.postimage{
+	width: 100%;
+
+}
+
+
+.vh-6{
+	height: 6vh;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+@media only screen and (min-width: 768px) {
+
+	nav{
+	position:inherit;
+	display: flex;
+	background-color: #ffffff;
+		justify-content: space-between;
+	}
+	.psstick{
+		position: inherit;
+	}
+	.list li{
+		padding: 0 10px 0 0;
+	}
+
+	.jusc{
+		justify-content: inherit;
+	}
+.wd-100{
+width: inherit;
+}
+.list{
+font-size: 1.2em;
+padding: inherit;
+}
+.pd-8{
+	padding: 8px;
+}
+.logo{
+	text-align: inherit;
+}
+.flex_item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.img{
+	padding: 0 0 0 10px;
+}
+.sct{
+	border: 1px solid rgb(198, 198, 198);
+}
+.pd-top{
+padding: inherit;
+}
+}
+
+
