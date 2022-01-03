@@ -5,6 +5,13 @@
 	text-decoration: none;
 	list-style-type: none;
 }
+
+#slider {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+ }
 .fs-12{
 	font-size: 1.2em;
 }
@@ -44,8 +51,15 @@ width: 100%;
 	display: flex;
 
 }
+.btn{
+	opacity: 0.1;
+}
+.btn:hover{
+	opacity: 0.5;
+
+}
 .container{
-	max-width: 550px;
+	max-width: 500px;
 	margin: 0 auto;
 
 }

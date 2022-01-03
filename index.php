@@ -2,7 +2,7 @@
 		<?php
 		require "db.php";
 
-		session_start(); 
+		session_start();
 		if ( !isset($_SESSION['email'])  ||  $_SESSION['email']=="" ) header('Location: loginc.php'); 
 
 
@@ -105,11 +105,8 @@
 				$time=date('Y-m-d') .time();
 
 		$sql='INSERT INTO `post`(`id`, `name`, `user`, `date`, `image`, `text`) VALUES (NULL,"'.$row['name'].'","'.$row['id'].'","'.$time.'","'.$image_name.'","'.$text.'")';
-
 		$result=mysqli_query($conn,$sql);
 		}
-			
-
 			}
 
 		}	
@@ -117,7 +114,7 @@
 		}
 			?>	
 		<?php
-			$arr=[];
+			
 		$sql='SELECT DISTINCT `name`,`user`,`date`, `text` FROM `post` ORDER BY `date` DESC';
 		$result=mysqli_query($conn,$sql);
 		if(mysqli_num_rows($result)>0){
@@ -152,40 +149,53 @@
 				} 
 			} 
 			?>
-			<!-- <div class="slideshow-container">
-			<div class="mySlides fade"> -->
+		
 			
 			<?php
 			if(mysqli_num_rows($result2)>1){ 
+				$arr=[];
 				?>
-						<div class="container2">
-				<button onclick=""><i class="fas fa-chevron-left"></i></button>
+				<div id="slider">
+            <button onclick="sol()" class="btn"> ⏴ </button>
 				<?php
 				while($row2 = mysqli_fetch_assoc($result2)){
 					$arr[]=$row2['image'];
 
 					?>
-				
-					<div class="post">
-					<img class="postimage" src="img/<?=$row2['image']?>" alt="">
-					</div>	
-				
-
 					<?php
 
 				} ?>
-		<script>
-					let x=<?php print_r($arr);?>;
-					document.write('<p>'+x+'</p>')
-				</script>
-				<button onclick=""><i class="fas fa-chevron-right"></i></button>
+				
+				<button onclick="sag()" class="btn"> ⏵ </button>    
 				</div>
+				<script>
+					let arr=<?php print_r($arr)?>
+				
+					let slider = document.getElementById("slider")
+						x=0
+					deyis()    
+					function sol(){
+						if(x>0)x--
+						else x=arr.length-1
+						deyis()
+					}
+					function sag(){
+						if(x<arr.length )x++
+						else x=0
+						deyis()
+					}
+					
+					function deyis(){
+						for (let key in arr) {
+						slider.style.background=`url('img/+ ${key[x]}') center/cover`
+							}
+							
+					}
+			 	</script>
 				<?php
 			}
 			?>
-				
-			<!-- </div>
-			</div> -->
+			
 			<?php
 			?>
 			<div class="usermessage ">

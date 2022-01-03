@@ -102,29 +102,6 @@ else{
       </div>
       
     </main>
-    <!-- <footer>
-      <ul class="footer-links">
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">HELP</a></li>
-        <li><a href="#">PRESS</a></li>
-        <li><a href="#">API</a></li>
-        <li><a href="#">JOBS</a></li>
-        <li><a href="#">PRIVACY</a></li>
-        <li><a href="#">TERMS</a></li>
-        <li><a href="#">LOCATIONS</a></li>
-        <li><a href="#">TOP</a></li>
-        <li><a href="#">ACCOUNTS</a></li>
-        <li><a href="#">HASHTAGS</a></li>
-        <li><a href="#">LANGUAGE</a></li>
-      </ul>
-      <span class="copyright">&copy; 2020 INSTAGRAM FROM FACEBOOK</span>
-    </footer> -->
-    <!-- <p><?php
-    
-
-    ?></p> -->
-   
-
 		<script>
 let arr=['1.jpg','2.jpg','3.jpg','4.jpg']
 let i=0
